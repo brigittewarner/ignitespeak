@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1370825948">
+    <data-source source="LOCAL" name="Rails ignitespeak: development" uuid="901dcf8a-621f-4c9c-b3a1-3f1cfc22a108">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:ignitespeak_development</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails ignitespeak: test" uuid="762ea1a0-2b68-4c2f-bb90-9281475c702e">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:ignitespeak_test</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

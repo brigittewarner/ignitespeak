@@ -21,8 +21,9 @@
       = render 'layouts/messages'
 
       #main_content
-        .row
-          %h1.span12= title
+        .row-fluid
+          .span2
+          %h1.span9= title
         = yield
 
   = javascript_include_tag "application"
