@@ -4,11 +4,15 @@
     = f.input :speaker_name, label: "Your name", required: true, input_html: { maxlength: 254 }
     = f.input :email, label: "Your email address", required: true, input_html: { maxlength: 254 }
     = f.input :title, label: "Title of your talk", required: true, input_html: { maxlength: 254 }
-    = f.input :description, label: "Brief description of your talk (1000 characters maximum)", required: true, input_html: { maxlength: 1000, rows: 8 }
-    = f.input :bio, label: "A one sentence biographical description of your background (100 characters maximum).", required: true, input_html: { maxlength: 100, rows: 1, onKeyDown: "limitText(this.form.proposal_bio, getElementById('countdown'),100);", onKeyUp: "limitText(this.form.proposal_bio,getElementById('countdown'),100);" }
+    = f.input :description, label: "Brief description of your talk (1000 characters maximum)", required: true, input_html: { maxlength: 1000, rows: 8,  onKeyDown: "limitText(this.form.proposal_description, getElementById('countdown'),1000);", onKeyUp: "limitText(this.form.proposal_description,getElementById('countdown'),1000);" }
     %font{:size => "1"}
       You have
-      %span#countdown 100
+      %span#countdown 1000
+      characters left.
+    = f.input :bio, label: "A one sentence biographical description of your background (100 characters maximum).", required: true, input_html: { maxlength: 100, rows: 1, onKeyDown: "limitText(this.form.proposal_bio, getElementById('countdown1'),100);", onKeyUp: "limitText(this.form.proposal_bio,getElementById('countdown1'),100);" }
+    %font{:size => "1"}
+      You have
+      %span#countdown1 100
       -#%input{:readonly => "readonly", :type=>"text", :name => "countdown", :size => "3", :value => "100", :style => "height: 14px"}
       characters left.
     = f.input :website, label: "Your website URL, if any", required: false, input_html: { maxlength: 254 }
